@@ -1,5 +1,5 @@
 body {
-    background-image: radial-gradient(rgb(20, 54, 148), rgb(7, 19, 52));
+    background-color: rgb(28, 63, 159);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -25,8 +25,8 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.42);
-    box-shadow: rgba(0, 0, 0, 0.59) 1.5em 1.5em 0;
+    background-color: rgba(0, 0, 0, 0.539);
+    box-shadow: rgba(0, 0, 0, 0.59) 1.3em 1.3em 0;
     width: clamp(250px, 50%, 15vw);
     border-radius: 10%;
     padding: 3em;
@@ -43,7 +43,7 @@ input {
     border: rgb(184, 184, 184) solid 2px;
     box-shadow: rgb(160, 160, 160) 0 3px 0;
     border-radius: 10px;
-    margin-bottom: 2em;
+    margin: 5px 0 2em 0;
     width: 16em;
     height: 1.7em;
 }
@@ -55,4 +55,39 @@ button {
     margin-top: .5em;
     font-weight: bold;
     cursor: pointer;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.shape {
+    background-color: rgba(7, 19, 52, 0.819);
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    z-index: -1;
+    top:90%;
+    border-radius: 15% 70% 0 0;
+    box-shadow: rgba(2, 7, 24, 0.315) 0 -15px 0, rgba(2, 7, 24, 0.315) 0 -25px 0, rgba(2, 7, 24, 0.315) 0 -35px 0, rgba(2, 7, 24, 0.315) 0 -45px 0;
+    animation: wave ease-in-out infinite 9s;
+}
+
+input:valid {
+
+}
+
+input:invalid {
+    
+}
+
+@keyframes wave {
+    50% {
+        border-radius: 70% 15% 0 0;
+    }
+    100% {
+        border-radius: 15% 70% 0 0;
+    }
 }
