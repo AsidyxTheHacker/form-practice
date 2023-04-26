@@ -97,6 +97,19 @@ input:invalid {
 
 @media (max-width: 500px) {
     .container {
-        
+        transform: scale(.9);
+        height: 100vh;
+    }
+    .form-container {
+        padding: 2.1em;
+    }
+    input {
+        margin: 5px 0 1.5em 0;
+    }
+    label {
+        font-size: 1.2em;
+    }
+    .shape {
+        box-shadow: rgba(2, 7, 24, 0.315) 0 -5px 0, rgba(2, 7, 24, 0.315) 0 -15px 0, rgba(2, 7, 24, 0.315) 0 -25px 0, rgba(2, 7, 24, 0.315) 0 -35px 0;
     }
 }
