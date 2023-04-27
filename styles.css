@@ -39,6 +39,7 @@ label {
 }
 
 input {
+    color: rgb(44, 44, 44);
     background-color: rgb(235, 235, 235);
     border: rgb(184, 184, 184) solid 2px;
     box-shadow: rgb(160, 160, 160) 0 3px 0;
@@ -46,7 +47,9 @@ input {
     margin: 5px 0 2em 0;
     width: 17em;
     height: 1.75em;
-    padding: 1px 10px 1px 10px;
+    padding: 5px 10px 5px 10px;
+    transition: .5s;
+    font-weight: bold;
 }
 
 button {
@@ -80,11 +83,21 @@ h1 {
 }
 
 input:valid {
-
+    background-color: rgb(185, 231, 166);
+    border: rgb(149, 186, 133) solid 2px;
+    box-shadow: rgb(128, 160, 114) 0 3px 0;
 }
 
 input:invalid {
+    background-color: rgb(231, 155, 155);
+    border: rgb(182, 123, 123) solid 2px;
+    box-shadow: rgb(157, 106, 106) 0 3px 0;
+}
 
+input:focus:invalid, input:focus:valid {
+    background-color: rgb(235, 235, 235);
+    border: rgb(184, 184, 184) solid 2px;
+    box-shadow: rgb(160, 160, 160) 0 3px 0;
 }
 
 @keyframes wave {
@@ -97,23 +110,7 @@ input:invalid {
 }
 
 @media (max-width: 500px) {
-    .container {
-        transform: scale(.88);
-        height: 100vh;
-    }
-    .form-container {
-        padding: 2em;
-    }
-    input {
-        margin: 5px 0 2em 0;
-    }
-    label {
-        font-size: 1.2em;
-    }
     .shape {
-        box-shadow: rgba(2, 7, 24, 0.315) 0 -5px 0, rgba(2, 7, 24, 0.315) 0 -15px 0, rgba(2, 7, 24, 0.315) 0 -25px 0, rgba(2, 7, 24, 0.315) 0 -35px 0;
-    }
-    h1 {
-        font-size: 2.5em;
+        top: 135%;
     }
 }
