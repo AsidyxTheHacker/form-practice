@@ -26,10 +26,10 @@ form {
     justify-content: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.431);
-    box-shadow: rgba(0, 0, 0, 0.636) 4px 4px 10px;
+    box-shadow: rgb(5, 17, 50) 8px 8px 0;
     border: solid rgba(0, 0, 0, 0.138) 3px;
     width: clamp(250px, 50%, 15vw);
-    border-radius: 20px;
+    border-radius: 20% 0;
     padding: 2.5em;
 }
 
@@ -77,8 +77,8 @@ button:hover {
 
 h1 {
     color: whitesmoke;
-    font-size: 3em;
-    text-decoration: underline;
+    text-shadow: rgb(12, 39, 112) 4px 4px 0, rgb(8, 26, 77) 4px 4px 8px;
+    font-size: 3.5em;
     margin: .3em;
 }
 
