@@ -9,7 +9,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: clamp(350px, 50%, 30vw);
+    width: clamp(350px, 50%, 25vw);
 }
 
 .container {
@@ -44,8 +44,9 @@ input {
     box-shadow: rgb(160, 160, 160) 0 3px 0;
     border-radius: 10px;
     margin: 5px 0 2em 0;
-    width: 16em;
+    width: 17em;
     height: 1.75em;
+    padding: 1px 10px 1px 10px;
 }
 
 button {
@@ -73,7 +74,7 @@ h1 {
     position: absolute;
     z-index: -1;
     top:90%;
-    border-radius: 10% 80% 0 0;
+    border-radius: 10% 75% 0 0;
     box-shadow: rgba(2, 7, 24, 0.315) 0 -15px 0, rgba(2, 7, 24, 0.315) 0 -25px 0, rgba(2, 7, 24, 0.315) 0 -35px 0, rgba(2, 7, 24, 0.315) 0 -45px 0;
     animation: wave ease-in-out infinite 10s;
 }
@@ -88,28 +89,31 @@ input:invalid {
 
 @keyframes wave {
     50% {
-        border-radius: 80% 10% 0 0;
+        border-radius: 75% 10% 0 0;
     }
     100% {
-        border-radius: 10% 80% 0 0;
+        border-radius: 10% 75% 0 0;
     }
 }
 
 @media (max-width: 500px) {
     .container {
-        transform: scale(.9);
+        transform: scale(.88);
         height: 100vh;
     }
     .form-container {
-        padding: 2.1em;
+        padding: 2em;
     }
     input {
-        margin: 5px 0 1.5em 0;
+        margin: 5px 0 2em 0;
     }
     label {
         font-size: 1.2em;
     }
     .shape {
         box-shadow: rgba(2, 7, 24, 0.315) 0 -5px 0, rgba(2, 7, 24, 0.315) 0 -15px 0, rgba(2, 7, 24, 0.315) 0 -25px 0, rgba(2, 7, 24, 0.315) 0 -35px 0;
+    }
+    h1 {
+        font-size: 2.5em;
     }
 }
