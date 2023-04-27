@@ -25,7 +25,8 @@
                 <input type="email" id="email" name="email" required placeholder="you@example.com">
 
                 <label for="password">*Password</label>
-                <input type="password" id="password" name="password" required placeholder="Password">
+                <input type="password" id="password" name="password" required placeholder="Password" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
 
                 <label for="password-confirm">*Confirm Password</label>
                 <input type="password" id="password-confirm" name="password-confirm" required placeholder="Retype Password">

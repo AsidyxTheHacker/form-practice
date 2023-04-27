@@ -25,9 +25,9 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.431);
-    box-shadow: rgb(5, 17, 50) 8px 8px 0;
-    border: solid rgba(0, 0, 0, 0.138) 3px;
+    background-color: rgba(0, 0, 0, 0.306);
+    box-shadow: rgb(6, 21, 62) 4px 4px 0, rgb(4, 13, 39) 8px 8px 0, rgba(0, 0, 0, 0.521) 10px 10px 10px, rgb(4, 13, 39) inset 6px 6px 3px;
+    border: solid rgba(0, 0, 0, 0.166) 4px;
     width: clamp(250px, 50%, 15vw);
     border-radius: 20% 0;
     padding: 2.5em;
@@ -76,22 +76,23 @@ button:hover {
 }
 
 h1 {
-    color: whitesmoke;
-    text-shadow: rgb(12, 39, 112) 4px 4px 0, rgb(8, 26, 77) 4px 4px 8px;
-    font-size: 3.5em;
-    margin: .3em;
+    color: rgba(245, 245, 245, 0.932);
+    text-shadow: rgb(129, 129, 129) 2px 2px 0, rgb(6, 21, 62) 5px 5px 0;
+    font-size: 3.8em;
+    margin: .3em .3em .3em 1.3em;
+    letter-spacing: .05em;
 }
 
 .shape {
     background-color: rgb(7, 19, 52);
     width: 100vw;
-    height: 10vh;
+    height: 6vh;
     position: absolute;
     z-index: -1;
-    top:90%;
-    border-radius: 10% 75% 0 0;
+    top:94%;
+    border-radius: 30% 90% 0 0;
     box-shadow: rgba(2, 7, 24, 0.315) 0 -15px 0, rgba(2, 7, 24, 0.315) 0 -25px 0, rgba(2, 7, 24, 0.315) 0 -35px 0, rgba(2, 7, 24, 0.315) 0 -45px 0;
-    animation: wave ease-in-out infinite 10s;
+    animation: wave ease-in-out infinite 9s;
 }
 
 input:valid {
@@ -114,15 +115,22 @@ input:focus:invalid, input:focus:valid {
 
 @keyframes wave {
     50% {
-        border-radius: 75% 10% 0 0;
+        border-radius: 90% 30% 0 0;
     }
     100% {
-        border-radius: 10% 75% 0 0;
+        border-radius: 30% 90% 0 0;
     }
 }
 
 @media (max-width: 500px) {
     .shape {
-        top: 135%;
+        top: 130%;
+        height: 12vh;
+    }
+    body {
+        min-height: 140vh;
+    }
+    .form-container {
+        height: 85vh;
     }
 }
