@@ -42,10 +42,10 @@ label {
 input {
     color: rgb(44, 44, 44);
     background-color: rgb(235, 235, 235);
-    border: rgb(184, 184, 184) solid 2px;
+    border: rgb(184, 184, 184) solid 3px;
     box-shadow: rgb(160, 160, 160) 0 3px 0;
     border-radius: 10px;
-    margin: 5px 0 2em 0;
+    margin: 3px 0 1.6em 0;
     width: 17em;
     height: 1.75em;
     padding: 5px 10px 5px 10px;
@@ -57,29 +57,29 @@ button {
     color: rgb(46, 46, 46);
     background-color: rgb(192, 192, 192);
     border: solid 2px rgb(105, 105, 105);
-    box-shadow: rgb(104, 104, 104) -3px -3px 0;
+    box-shadow: rgb(104, 104, 104) -2px -2px 0;
     border-radius: 15px;
     font-size: 2em;
     width: 6em;
     margin-top: .4em;
     font-weight: bold;
     cursor: pointer;
-    padding: .16em 1em .16em 1em;
+    padding: .12em 1em .12em 1em;
     transition: .2s;
 }
 
 button:hover {
-    color: rgb(23, 55, 23);
-    background-color: rgb(114, 195, 114);
-    border: solid 2px rgb(65, 111, 65);
-    box-shadow: rgb(65, 111, 65) 3px 3px 0;
+    color: rgb(28, 53, 28);
+    background-color: rgb(130, 195, 130);
+    border: solid 2px rgb(74, 113, 74);
+    box-shadow: rgb(74, 113, 74) 2px 2px 0, inset rgb(74, 113, 74) 1px 1px 1px;
 }
 
 h1 {
     color: rgba(245, 245, 245, 0.932);
     text-shadow: rgb(129, 129, 129) 2px 2px 0, rgb(6, 21, 62) 5px 5px 0;
-    font-size: 3.8em;
-    margin: .3em .3em .3em 1.3em;
+    font-size: 3.9em;
+    margin: .3em .3em .2em 1.3em;
     letter-spacing: .05em;
 }
 
@@ -96,20 +96,20 @@ h1 {
 }
 
 input:valid {
-    background-color: rgb(185, 231, 166);
-    border: rgb(149, 186, 133) solid 2px;
-    box-shadow: rgb(128, 160, 114) 0 3px 0;
+    background-color: rgb(201, 234, 191);
+    border: rgb(122, 183, 95) solid 3px;
+    box-shadow: rgb(104, 156, 82) 0 3px 0;
 }
 
 input:invalid {
-    background-color: rgb(231, 155, 155);
-    border: rgb(182, 123, 123) solid 2px;
-    box-shadow: rgb(157, 106, 106) 0 3px 0;
+    background-color: rgb(234, 191, 191);
+    border: rgb(180, 84, 84) solid 3px;
+    box-shadow: rgb(154, 68, 68) 0 3px 0;
 }
 
 input:focus:invalid, input:focus:valid {
     background-color: rgb(235, 235, 235);
-    border: rgb(184, 184, 184) solid 2px;
+    border: rgb(184, 184, 184) solid 3px;
     box-shadow: rgb(160, 160, 160) 0 3px 0;
 }
 
